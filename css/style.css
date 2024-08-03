@@ -4,32 +4,37 @@ body {
     margin: 0;
     font-family: 'Noto Sans', sans-serif;
 }
+
 .main-login {
     width: 100vw;
     height: 100vh;
     background: #697050;
     display: flex;
-    justify-content: center; /* centraliza tudo */
-    align-items: center;
+    justify-content: center;
+    align-items: center; /* centraliza tudo */
 }
+
 .left-login {
     width: 30vw;
     height: 100vh;
     display: flex;
-    justify-content: center; /* centraliza tudo */
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
 .left-login > h1 {
     color: #f0a11a;
 }
+
 .right-login {
     width: 40vw;
     height: 100vh;
     display: flex;
-    justify-content: center; /* centraliza tudo */
-    align-items: center;  
+    justify-content: center;
+    align-items: center;
 }
+
 .card-login {
     width: 65%;
     margin-top: 15%;
@@ -41,13 +46,15 @@ body {
     background: #697050;
     border-radius: 30px;
     box-shadow: 0px 10px 40px #00000056;
-    letter-spacing: 3px; /* letreiro */
+    letter-spacing: 3px;
 }
+
 .card-login > h1 {
     color: #f0a11a;
     font-weight: 900;
     margin: 0;
 }
+
 .textfield {
     width: 100%;
     display: flex;
@@ -56,6 +63,7 @@ body {
     justify-content: center;
     margin: 10px 0px;
 }
+
 .textfield > input {
     width: 100%;
     border: none;
@@ -68,24 +76,97 @@ body {
     outline: none;
     box-sizing: border-box;
 }
+
 .textfield > label {
     color: #f0ffffde;
     margin-bottom: 10px;
 }
+
 .textfield > input::placeholder {
     color: #00000056;
 }
+
 .button-login {
     width: 100%;
     padding: 16px 0px;
     margin: 20px;
     border-radius: 18px;
     outline: none;
-    text-transform: uppercase; /* deixa todo texto em maiusculo */
+    text-transform: uppercase;
     font-weight: 950;
     color: #2b134b;
     background-color: #DA9928;
     cursor: pointer;
     border: none;
-    box-shadow: 0px 10px 15px #f5ac2f
+    box-shadow: 0px 10px 15px #f5ac2f;
+}
+
+/* Media queries para diferentes dispositivos */
+
+/* Para Dispositivos Móveis (largura máxima de 767px) */
+@media screen and (max-width: 767px) {
+    body {
+        background-color: #697050;
+    }
+    .main-login {
+        flex-direction: column;
+    }
+    .left-login, .right-login {
+        width: 65%;
+        height: auto;
+    }
+    .card-login {
+        width: 100%;
+        margin-top: 2px;
+    }
+}
+
+/* Para Tablets (largura entre 768px e 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background-color:#697050;
+    }
+    .left-login, .right-login {
+        width: 70%;
+    }
+    .card-login {
+        width: 80%;
+    }
+}
+
+/* Para Desktops (largura mínima de 1025px) */
+@media screen and (min-width: 1025px) {
+    body {
+        background-color: lightcoral;
+    }
+}
+
+/* Orientação Retrato (Portrait) */
+@media screen and (orientation: portrait) {
+    body {
+        font-size: 10px;
+    }
+}
+
+/* Orientação Paisagem (Landscape) */
+@media screen and (orientation: landscape) {
+    body {
+        font-size: 18px;
+    }
+}
+
+/* Resolução Alta (High-DPI) */
+@media screen and (-webkit-min-device-pixel-ratio: 2), 
+       screen and (min-resolution: 192dpi) {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Combinação de Consultas de Mídia */
+@media screen and (max-width: 767px), screen and (orientation: portrait) {
+    header {
+        background-color: yellow;
+    }
 }

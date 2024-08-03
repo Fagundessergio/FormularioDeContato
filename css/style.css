@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    background: #697050;
+    display: flex;
+    justify-content: center; /* centraliza tudo */
+    align-items: center;
+}
+.left-login {
+    width: 30vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* centraliza tudo */
+    align-items: center;
+    flex-direction: column;
+}
+.left-login > h1 {
+    color: #f0a11a;
+}
+.right-login {
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* centraliza tudo */
+    align-items: center;  
+}
+.card-login {
+    width: 65%;
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #697050;
+    border-radius: 30px;
+    box-shadow: 0px 10px 40px #00000056;
+    letter-spacing: 3px; /* letreiro */
+}
+.card-login > h1 {
+    color: #f0a11a;
+    font-weight: 900;
+    margin: 0;
+}
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+.textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 18px;
+    padding: 15px;
+    background: #E8D6B0;
+    color: black;
+    font-size: 12pt;
+    box-shadow: 1px 10px 25px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+.textfield > label {
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+.textfield > input::placeholder {
+    color: #00000056;
+}
+.button-login {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 20px;
+    border-radius: 18px;
+    outline: none;
+    text-transform: uppercase; /* deixa todo texto em maiusculo */
+    font-weight: 950;
+    color: #2b134b;
+    background-color: #DA9928;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 10px 15px #f5ac2f
+}

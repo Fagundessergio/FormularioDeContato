@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulário de Login</title>
+</head>
+<body>
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Entre<br>E venha ter uma vida mais leve e gratificante</h1>
+            <img src="img/mindfulness-animate_final.svg" alt="mindfulness">
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <h1>Cadastre-se</h1>
+                <!--Input de nome-->
+                <div class="textfield">
+                    <label for="Nome">Nome</label>
+                    <input type="text" name="Nome" placeholder="Digite seu nome">
+                </div>
+                <!--Input de email-->
+                <div class="textfield">
+                    <label for="Email">Email</label>
+                    <input type="text" name="senha" placeholder="Digite seu Email">
+                </div>
+
+                <!--Input inserindo uma mensagem-->
+                <div class="textfield">
+                    <label for="Email">Mensagem</label>
+                    <input type="text" name="senha" placeholder="Nos envie uma mensagem">
+                </div>
+                <button class="button-login">Enviar</button>
+                <p id="erro-msg" style="color:rgb(231, 96, 96);"></p>
+            </div>
+        </div>
+    </div>
+    <script src="validacao.js"></script>
+</body>
+</html>

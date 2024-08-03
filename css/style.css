@@ -98,7 +98,7 @@ body {
     background-color: #DA9928;
     cursor: pointer;
     border: none;
-    box-shadow: 0px 10px 15px #f5ac2f;
+    box-shadow: 2px 2px 10px #DA9928;
 }
 @media screen and (max-width: 767px) {
     body {

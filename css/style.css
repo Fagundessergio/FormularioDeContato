@@ -4,7 +4,6 @@ body {
     margin: 0;
     font-family: 'Noto Sans', sans-serif;
 }
-
 .main-login {
     width: 100vw;
     height: 100vh;
@@ -13,7 +12,6 @@ body {
     justify-content: center;
     align-items: center; /* centraliza tudo */
 }
-
 .left-login {
     width: 30vw;
     height: 100vh;
@@ -22,11 +20,9 @@ body {
     align-items: center;
     flex-direction: column;
 }
-
 .left-login > h1 {
     color: #f0a11a;
 }
-
 .right-login {
     width: 40vw;
     height: 100vh;
@@ -34,7 +30,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 .card-login {
     width: 65%;
     margin-top: 15%;
@@ -48,13 +43,11 @@ body {
     box-shadow: 0px 10px 40px #00000056;
     letter-spacing: 3px;
 }
-
 .card-login > h1 {
     color: #f0a11a;
     font-weight: 900;
     margin: 0;
 }
-
 .textfield {
     width: 100%;
     display: flex;
@@ -63,7 +56,6 @@ body {
     justify-content: center;
     margin: 10px 0px;
 }
-
 .textfield > input {
     width: 100%;
     border: none;
@@ -76,16 +68,13 @@ body {
     outline: none;
     box-sizing: border-box;
 }
-
 .textfield > label {
     color: #f0ffffde;
     margin-bottom: 10px;
 }
-
 .textfield > input::placeholder {
     color: #00000056;
 }
-
 .button-login {
     width: 100%;
     padding: 16px 0px;

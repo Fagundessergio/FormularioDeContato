@@ -100,10 +100,6 @@ body {
     border: none;
     box-shadow: 0px 10px 15px #f5ac2f;
 }
-
-/* Media queries para diferentes dispositivos */
-
-/* Para Dispositivos Móveis (largura máxima de 767px) */
 @media screen and (max-width: 767px) {
     body {
         background-color: #697050;
@@ -120,8 +116,6 @@ body {
         margin-top: 2px;
     }
 }
-
-/* Para Tablets (largura entre 768px e 1024px) */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     body {
         background-color:#697050;
@@ -133,29 +127,21 @@ body {
         width: 80%;
     }
 }
-
-/* Para Desktops (largura mínima de 1025px) */
 @media screen and (min-width: 1025px) {
     body {
         background-color: lightcoral;
     }
 }
-
-/* Orientação Retrato (Portrait) */
 @media screen and (orientation: portrait) {
     body {
         font-size: 10px;
     }
 }
-
-/* Orientação Paisagem (Landscape) */
 @media screen and (orientation: landscape) {
     body {
         font-size: 18px;
     }
 }
-
-/* Resolução Alta (High-DPI) */
 @media screen and (-webkit-min-device-pixel-ratio: 2), 
        screen and (min-resolution: 192dpi) {
     img {
@@ -163,8 +149,6 @@ body {
         height: auto;
     }
 }
-
-/* Combinação de Consultas de Mídia */
 @media screen and (max-width: 767px), screen and (orientation: portrait) {
     header {
         background-color: yellow;
